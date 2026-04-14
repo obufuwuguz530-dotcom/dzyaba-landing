@@ -10,8 +10,12 @@
         body { font-family: 'Inter', sans-serif; background-color: #f0fdfa; }
         .text-dzyaba-pink { color: #d11252; }
         .bg-dzyaba-pink { background-color: #d11252; }
+        .text-dzyaba-mint { color: #11b5a4; }
+        .bg-dzyaba-mint { background-color: #11b5a4; }
         .gradient-mesh {
-            background: radial-gradient(circle at top left, #f0fdfa 0%, #ffffff 50%, #fce7f3 100%);
+            background:
+                radial-gradient(circle at top left, #ecfeff 0%, #ffffff 48%, #fce7f3 100%),
+                radial-gradient(circle at bottom right, #d1fae5 0%, rgba(255,255,255,0) 55%);
         }
         .card-shadow { box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05); }
         .phone-mockup { transform: rotate(-2deg); transition: transform 0.3s ease; }
@@ -22,10 +26,29 @@
 
     <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
         <div class="flex items-center space-x-2">
-            <div class="w-10 h-10 bg-dzyaba-pink rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">Д</div>
+            <div class="w-10 h-10 rounded-xl overflow-hidden shadow-lg bg-white ring-1 ring-slate-200 flex items-center justify-center">
+                <svg viewBox="0 0 512 512" class="w-10 h-10" aria-label="DZYABA logo" role="img">
+                    <defs>
+                        <linearGradient id="dzyabaSplit" x1="0" x2="1" y1="0" y2="0">
+                            <stop offset="0%" stop-color="#d11252" />
+                            <stop offset="50%" stop-color="#d11252" />
+                            <stop offset="50%" stop-color="#11b5a4" />
+                            <stop offset="100%" stop-color="#11b5a4" />
+                        </linearGradient>
+                    </defs>
+                    <rect width="512" height="512" fill="white"/>
+                    <path d="M256 54c-86.5 0-156.6 70.1-156.6 156.6 0 86.6 70.1 156.7 156.6 156.7 20.4 0 39.9-3.9 57.8-11l33.3 19.3c9.5 5.5 21.4-2.7 19.3-13.5l-7.7-39.2c34.1-28.7 55.7-71.7 55.7-119.3C412.7 124.1 342.6 54 256 54Z" fill="url(#dzyabaSplit)"/>
+                    <path d="M302 120h-92c-45.3 0-82 36.7-82 82v58c0 45.3 36.7 82 82 82h92c45.3 0 82-36.7 82-82v-58c0-45.3-36.7-82-82-82Z" fill="white"/>
+                    <circle cx="214" cy="232" r="26" fill="#0f172a"/>
+                    <circle cx="298" cy="232" r="26" fill="#0f172a"/>
+                    <path d="M206 288c14 18 32 27 50 27s36-9 50-27" fill="none" stroke="#0f172a" stroke-width="18" stroke-linecap="round"/>
+                    <rect x="246" y="38" width="20" height="54" rx="10" fill="#0f172a"/>
+                    <circle cx="256" cy="32" r="18" fill="#0f172a"/>
+                </svg>
+            </div>
             <div class="flex flex-col">
                 <span class="text-2xl font-extrabold text-slate-800 tracking-tight leading-none">ДЗЯБА</span>
-                <span class="text-[10px] font-bold text-dzyaba-pink uppercase tracking-[0.2em]">AI Digital Office</span>
+                <span class="text-[10px] font-bold text-dzyaba-pink uppercase tracking-[0.2em]">Ваш цифровой офис</span>
             </div>
         </div>
         <div class="hidden md:flex space-x-8 text-slate-600 font-semibold">
@@ -33,7 +56,7 @@
             <a href="#economy" class="hover:text-dzyaba-pink transition">Выгода</a>
             <a href="#partner" class="hover:text-dzyaba-pink transition">Партнерка</a>
         </div>
-        <button class="bg-slate-900 text-white px-6 py-3 rounded-full font-bold hover:scale-105 transition-transform shadow-xl">Запустить в ТГ</button>
+        <button class="bg-slate-900 text-white px-6 py-3 rounded-full font-bold hover:scale-105 transition-transform shadow-xl hover:shadow-emerald-200/40">Запустить в ТГ</button>
     </nav>
 
     <header class="max-w-6xl mx-auto px-6 pt-12 md:pt-20 pb-24 text-center md:text-left flex flex-col md:flex-row items-center gap-12">
@@ -51,6 +74,9 @@
 
             <div class="flex flex-col sm:flex-row gap-4">
                 <button class="bg-dzyaba-pink text-white px-10 py-5 rounded-2xl text-xl font-extrabold shadow-lg hover:shadow-pink-200 hover:translate-y-[-2px] transition-all">Попробовать 5 дней БЕСПЛАТНО</button>
+                <button class="bg-white text-slate-900 px-10 py-5 rounded-2xl text-xl font-extrabold shadow-lg border border-emerald-100 hover:border-emerald-200 hover:shadow-emerald-100 hover:translate-y-[-2px] transition-all">
+                    Посмотреть демо
+                </button>
             </div>
             <p class="mt-4 text-slate-400 text-sm font-medium">Без привязки карты • Мгновенный запуск в Telegram</p>
         </div>
