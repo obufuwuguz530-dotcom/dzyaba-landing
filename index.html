@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,55 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #f0fdfa; }
-        .text-dzyaba-pink { color: #d11252; }
-        .bg-dzyaba-pink { background-color: #d11252; }
-        .text-dzyaba-mint { color: #11b5a4; }
-        .bg-dzyaba-mint { background-color: #11b5a4; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0fdfa;
+        }
+
+        .text-dzyaba-pink {
+            color: #d11252;
+        }
+
+        .bg-dzyaba-pink {
+            background-color: #d11252;
+        }
+
+        .text-dzyaba-mint {
+            color: #11b5a4;
+        }
+
+        .bg-dzyaba-mint {
+            background-color: #11b5a4;
+        }
+
         .gradient-mesh {
             background:
                 radial-gradient(circle at top left, #ecfeff 0%, #ffffff 48%, #fce7f3 100%),
-                radial-gradient(circle at bottom right, #d1fae5 0%, rgba(255,255,255,0) 55%);
+                radial-gradient(circle at bottom right, #d1fae5 0%, rgba(255, 255, 255, 0) 55%);
         }
-        .card-shadow { box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05); }
-        .phone-mockup { transform: rotate(-2deg); transition: transform 0.3s ease; }
-        .phone-mockup:hover { transform: rotate(0deg); }
+
+        .card-shadow {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+        }
+
+        .phone-mockup {
+            transform: rotate(-2deg);
+            transition: transform 0.3s ease;
+        }
+
+        .phone-mockup:hover {
+            transform: rotate(0deg);
+        }
     </style>
 </head>
+
 <body class="gradient-mesh">
 
     <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
         <div class="flex items-center space-x-2">
-            <div class="w-12 h-12 rounded-2xl overflow-hidden shadow-lg bg-white ring-1 ring-slate-200 flex items-center justify-center">
-                <img src="assets/logo.png" alt="DZYABA" class="w-full h-full object-cover scale-[1.35]" style="transform-origin:center;" />
+            <div
+                class="w-12 h-12 rounded-2xl overflow-hidden shadow-lg bg-white ring-1 ring-slate-200 flex items-center justify-center">
+                <img src="assets/logo.png" alt="DZYABA" class="w-full h-full object-contain" />
             </div>
             <div class="flex flex-col">
                 <span class="text-2xl font-extrabold text-slate-800 tracking-tight leading-none">ДЗЯБА</span>
@@ -39,12 +68,16 @@
             <a href="#economy" class="hover:text-dzyaba-pink transition">Выгода</a>
             <a href="#partner" class="hover:text-dzyaba-pink transition">Партнерка</a>
         </div>
-        <button class="bg-slate-900 text-white px-6 py-3 rounded-full font-bold hover:scale-105 transition-transform shadow-xl hover:shadow-emerald-200/40">Запустить в ТГ</button>
+        <button
+            class="bg-slate-900 text-white px-6 py-3 rounded-full font-bold hover:scale-105 transition-transform shadow-xl hover:shadow-emerald-200/40">Запустить
+            в ТГ</button>
     </nav>
 
-    <header class="max-w-6xl mx-auto px-6 pt-12 md:pt-20 pb-24 text-center md:text-left flex flex-col md:flex-row items-center gap-12">
+    <header
+        class="max-w-6xl mx-auto px-6 pt-12 md:pt-20 pb-24 text-center md:text-left flex flex-col md:flex-row items-center gap-12">
         <div class="md:w-3/5">
-            <div class="inline-block px-4 py-1 bg-white rounded-full text-sm font-bold text-dzyaba-pink mb-6 border border-pink-100 shadow-sm uppercase tracking-wider">
+            <div
+                class="inline-block px-4 py-1 bg-white rounded-full text-sm font-bold text-dzyaba-pink mb-6 border border-pink-100 shadow-sm uppercase tracking-wider">
                 15 лет опыта в онлайне • Теперь в одном окне
             </div>
             <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 leading-tight mb-8">
@@ -52,12 +85,16 @@
                 <span class="text-dzyaba-pink">Наймите Дзябу.</span>
             </h1>
             <p class="text-xl text-slate-600 max-w-2xl mb-10 leading-relaxed">
-                Ваш автономный цифровой офис в Telegram. Управляйте маркетингом, финансами и штатом ИИ-сотрудников <strong class="text-slate-800 italic">голосом</strong> прямо с мобильного телефона.
+                Ваш автономный цифровой офис в Telegram. Управляйте маркетингом, финансами и штатом ИИ-сотрудников
+                <strong class="text-slate-800 italic">голосом</strong> прямо с мобильного телефона.
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4">
-                <button class="bg-dzyaba-pink text-white px-10 py-5 rounded-2xl text-xl font-extrabold shadow-lg hover:shadow-pink-200 hover:translate-y-[-2px] transition-all">Попробовать 5 дней БЕСПЛАТНО</button>
-                <button class="bg-white text-slate-900 px-10 py-5 rounded-2xl text-xl font-extrabold shadow-lg border border-emerald-100 hover:border-emerald-200 hover:shadow-emerald-100 hover:translate-y-[-2px] transition-all">
+                <button
+                    class="bg-dzyaba-pink text-white px-10 py-5 rounded-2xl text-xl font-extrabold shadow-lg hover:shadow-pink-200 hover:translate-y-[-2px] transition-all">Попробовать
+                    5 дней БЕСПЛАТНО</button>
+                <button
+                    class="bg-white text-slate-900 px-10 py-5 rounded-2xl text-xl font-extrabold shadow-lg border border-emerald-100 hover:border-emerald-200 hover:shadow-emerald-100 hover:translate-y-[-2px] transition-all">
                     Посмотреть демо
                 </button>
             </div>
@@ -65,17 +102,27 @@
         </div>
 
         <div class="md:w-2/5 phone-mockup">
-            <div class="relative max-w-[280px] mx-auto bg-slate-900 rounded-[3rem] p-3 border-[10px] border-slate-800 shadow-2xl">
+            <div
+                class="relative max-w-[280px] mx-auto bg-slate-900 rounded-[3rem] p-3 border-[10px] border-slate-800 shadow-2xl">
                 <div class="bg-white rounded-[2.2rem] overflow-hidden aspect-[9/19] relative">
-                    <div class="absolute inset-0 bg-slate-100 flex flex-col items-center justify-center p-6 text-center">
-                        <div class="w-24 h-24 bg-pink-100 rounded-full mb-6 flex items-center justify-center animate-bounce">
-                            <svg class="w-10 h-10 text-dzyaba-pink" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"></path></svg>
+                    <div
+                        class="absolute inset-0 bg-slate-100 flex flex-col items-center justify-center p-6 text-center">
+                        <div
+                            class="w-24 h-24 bg-pink-100 rounded-full mb-6 flex items-center justify-center animate-bounce">
+                            <svg class="w-10 h-10 text-dzyaba-pink" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z">
+                                </path>
+                            </svg>
                         </div>
-                        <p class="font-bold text-slate-800 text-sm italic">«Дзяба, запиши расход 500р за кофе и сделай пост в канал...»</p>
+                        <p class="font-bold text-slate-800 text-sm italic">«Дзяба, запиши расход 500р за кофе и сделай
+                            пост в канал...»</p>
                         <div class="mt-8 space-y-2 w-full">
                             <div class="h-2 bg-slate-200 rounded w-full"></div>
                             <div class="h-2 bg-slate-200 rounded w-2/3"></div>
-                            <div class="h-8 bg-dzyaba-pink rounded-lg w-full mt-4 flex items-center justify-center text-[10px] text-white font-bold uppercase">Сделано!</div>
+                            <div
+                                class="h-8 bg-dzyaba-pink rounded-lg w-full mt-4 flex items-center justify-center text-[10px] text-white font-bold uppercase">
+                                Сделано!</div>
                         </div>
                     </div>
                 </div>
@@ -83,7 +130,62 @@
         </div>
     </header>
 
-    <section id="economy" class="max-w-5xl mx-auto px-6 py-20 bg-white rounded-[3rem] shadow-xl border border-slate-100">
+    <section class="max-w-6xl mx-auto px-6 py-24">
+        <div class="bg-white rounded-[3rem] p-8 md:p-16 shadow-2xl border border-slate-100 relative overflow-hidden">
+            <!-- Decorative mint blob -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-emerald-50 rounded-full blur-3xl opacity-50 -mr-32 -mt-32">
+            </div>
+
+            <div class="relative z-10 max-w-4xl">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+                    Вы предприниматель или <br> <span class="text-dzyaba-mint uppercase italic">системный
+                        администратор?</span>
+                </h2>
+                <p
+                    class="text-xl text-slate-600 mb-12 leading-relaxed italic border-l-4 border-dzyaba-mint pl-6 font-medium">
+                    «Я 15 лет в онлайне и знаю, как это — когда ты сидишь в 2 часа ночи и пытаешься настроить бота,
+                    который всё равно ломается. Хватит тратить жизнь на сервисы».
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-y-10 gap-x-12">
+                    <div class="flex items-start space-x-4">
+                        <div class="text-3xl bg-emerald-50 p-3 rounded-2xl">😤</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-1 text-lg">Хаос в сервисах</h4>
+                            <p class="text-slate-500 leading-relaxed">Мечетесь между GetCourse, AmoCRM, BotHelp и Canva?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="text-3xl bg-emerald-50 p-3 rounded-2xl">🤯</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-1 text-lg">Контент-рабство</h4>
+                            <p class="text-slate-500 leading-relaxed">Тратите часы на посты, сценарии Reels и картинки?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="text-3xl bg-emerald-50 p-3 rounded-2xl">💸</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-1 text-lg">Финансовая слепота</h4>
+                            <p class="text-slate-500 leading-relaxed">Забываете вносить расходы и не понимаете реальную
+                                прибыль?</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <div class="text-3xl bg-emerald-50 p-3 rounded-2xl">🕰️</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-1 text-lg">Потеря клиентов</h4>
+                            <p class="text-slate-500 leading-relaxed">Не успеваете ответить в Директ в 3 часа ночи?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="economy"
+        class="max-w-5xl mx-auto px-6 py-20 bg-white rounded-[3rem] shadow-xl border border-slate-100">
         <h2 class="text-3xl md:text-4xl font-extrabold text-center text-slate-900 mb-12">Сколько вы экономите?</h2>
         <div class="overflow-x-auto">
             <table class="w-full text-left border-collapse">
@@ -96,71 +198,366 @@
                 </thead>
                 <tbody class="text-slate-700">
                     <tr class="border-b border-slate-50 hover:bg-slate-50 transition">
-                        <td class="py-4 px-6 font-bold text-lg">SMM-менеджер + Дизайнер</td>
+                        <td class="py-4 px-6 font-bold text-lg">SMM-специалист</td>
                         <td class="py-4 px-6 text-slate-400">от 40 000 ₽ / мес</td>
-                        <td class="py-4 px-6 font-bold text-green-600">ВКЛЮЧЕНО</td>
+                        <td class="py-4 px-6 font-bold text-dzyaba-mint uppercase">ВКЛЮЧЕНО</td>
                     </tr>
                     <tr class="border-b border-slate-50 hover:bg-slate-50 transition">
-                        <td class="py-4 px-6 font-bold text-lg">Личный бизнес-ассистент</td>
+                        <td class="py-4 px-6 font-bold text-lg">Личный ассистент</td>
                         <td class="py-4 px-6 text-slate-400">от 30 000 ₽ / мес</td>
-                        <td class="py-4 px-6 font-bold text-green-600">ВКЛЮЧЕНО</td>
+                        <td class="py-4 px-6 font-bold text-dzyaba-mint uppercase">ВКЛЮЧЕНО</td>
                     </tr>
                     <tr class="border-b border-slate-50 hover:bg-slate-50 transition">
-                        <td class="py-4 px-6 font-bold text-lg">Техспец по ботам и CRM</td>
+                        <td class="py-4 px-6 font-bold text-lg">Техспец по ботам</td>
                         <td class="py-4 px-6 text-slate-400">от 20 000 ₽ / мес</td>
-                        <td class="py-4 px-6 font-bold text-green-600">ВКЛЮЧЕНО</td>
+                        <td class="py-4 px-6 font-bold text-dzyaba-mint uppercase">ВКЛЮЧЕНО</td>
+                    </tr>
+                    <tr class="border-b border-slate-50 hover:bg-slate-50 transition">
+                        <td class="py-4 px-6 font-bold text-lg">CRM + LMS</td>
+                        <td class="py-4 px-6 text-slate-400">от 10 000 ₽ / мес</td>
+                        <td class="py-4 px-6 font-bold text-dzyaba-mint uppercase">ВКЛЮЧЕНО</td>
                     </tr>
                     <tr class="bg-pink-50 rounded-b-2xl">
                         <td class="py-6 px-6 font-black text-2xl text-slate-900">ИТОГО:</td>
-                        <td class="py-6 px-6 text-slate-400 line-through text-xl">90 000 ₽+</td>
-                        <td class="py-6 px-6 font-black text-3xl text-dzyaba-pink uppercase italic">от 4 900 ₽</td>
+                        <td class="py-6 px-6 text-slate-400 text-xl font-bold">
+                            <span class="line-through">100 000 ₽</span> <br>
+                            <span class="text-xs uppercase tracking-widest text-slate-500 font-bold">+ ХАОС</span>
+                        </td>
+                        <td class="py-6 px-6 font-black text-3xl text-dzyaba-pink uppercase italic leading-tight">
+                            от 4 900 ₽ <br>
+                            <span class="text-xs tracking-[0.2em] font-extrabold text-dzyaba-mint">+ СПОКОЙСТВИЕ</span>
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </section>
 
-    <section id="features" class="max-w-6xl mx-auto px-6 py-24">
-        <h2 class="text-4xl font-extrabold text-center text-slate-900 mb-16 underline decoration-dzyaba-pink decoration-8 underline-offset-8">Все инструменты в одном окне</h2>
+    <section class="max-w-6xl mx-auto px-6 py-24">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">Решение: <span
+                    class="text-dzyaba-pink">Магия Дзябы</span></h2>
+            <p class="text-xl text-slate-500 font-medium italic">«Вам не нужно учить интерфейс. Просто скажите, что вам
+                нужно».</p>
+        </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-10 rounded-[2.5rem] card-shadow border border-slate-50 hover:translate-y-[-10px] transition-all">
-                <div class="text-4xl mb-6">🤖</div>
-                <h3 class="text-2xl font-black mb-4 text-slate-800">ИИ-Сотрудники</h3>
-                <p class="text-slate-500 leading-relaxed font-medium">Создайте свой цифровой офис. SMM-щик, Методолог или Продавец — они работают 24/7 без отпусков и зарплаты.</p>
-            </div>
-            <div class="bg-white p-10 rounded-[2.5rem] card-shadow border border-slate-50 hover:translate-y-[-10px] transition-all">
-                <div class="text-4xl mb-6">📢</div>
-                <h3 class="text-2xl font-black mb-4 text-slate-800">Мультиплатформа</h3>
-                <p class="text-slate-500 leading-relaxed font-medium">Управляйте рассылками и воронками в Telegram, ВК, Instagram и Макс. Весь ваш маркетинг — под полным контролем.</p>
-            </div>
-            <div class="bg-white p-10 rounded-[2.5rem] card-shadow border border-slate-50 hover:translate-y-[-10px] transition-all">
-                <div class="text-4xl mb-6">⚖️</div>
-                <h3 class="text-2xl font-black mb-4 text-slate-800">ИИ-Совещание</h3>
-                <p class="text-slate-500 leading-relaxed font-medium">Не с кем посоветоваться? Запустите "Консилиум" ИИ-экспертов прямо в Дзябе и получите идеальную стратегию за 1 минуту.</p>
+        <div
+            class="relative max-w-4xl mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white ring-1 ring-slate-100 bg-slate-900 aspect-video">
+            <iframe src="https://kinescope.io/embed/sR6mpdrNvqaat4tDyZQheg"
+                allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer"
+                frameborder="0" allowfullscreen style="position:absolute;width:100%;height:100%;top:0;left:0;"></iframe>
+        </div>
+
+        <div class="mt-12 flex justify-center">
+            <div
+                class="inline-flex items-center space-x-3 bg-emerald-50 px-6 py-3 rounded-full border border-emerald-100">
+                <span class="text-2xl animate-pulse">🎙️</span>
+                <p class="text-dzyaba-mint font-bold uppercase tracking-wider text-sm">Голосовое управление — это
+                    будущее вашего офиса</p>
             </div>
         </div>
     </section>
+
+    <section id="ai-staff" class="max-w-6xl mx-auto px-6 py-24">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">Весь ваш офис теперь в <span
+                    class="text-dzyaba-pink">одном приложении</span></h2>
+            <p class="text-xl text-slate-500 font-medium max-w-2xl mx-auto">Дзяба — это не просто чат-бот, а целая
+                экосистема агентов.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- AI SMM -->
+            <div
+                class="bg-white p-10 rounded-[2.5rem] card-shadow border border-slate-50 hover:translate-y-[-10px] transition-all flex flex-col items-center text-center group">
+                <div
+                    class="text-7xl mb-8 transform group-hover:scale-110 transition-transform duration-500 drop-shadow-sm">
+                    🎨</div>
+                <h3 class="text-2xl font-black mb-4 text-slate-800 uppercase italic tracking-tight">ИИ-SMM</h3>
+                <p class="text-slate-500 leading-relaxed font-medium">Ищет тренды, пишет сценарии Reels, делает
+                    фотосессии и постит в каналы.</p>
+            </div>
+
+            <!-- AI FinDirector -->
+            <div
+                class="bg-white p-10 rounded-[2.5rem] card-shadow border border-slate-50 hover:translate-y-[-10px] transition-all flex flex-col items-center text-center group">
+                <div
+                    class="text-7xl mb-8 transform group-hover:scale-110 transition-transform duration-500 drop-shadow-sm">
+                    💰</div>
+                <h3 class="text-2xl font-black mb-4 text-slate-800 uppercase italic tracking-tight">ИИ-Финдиректор</h3>
+                <p class="text-slate-500 leading-relaxed font-medium">Учет доходов/расходов (drag-and-drop), аналитика и
+                    прогноз платежей.</p>
+            </div>
+
+            <!-- AI Sales -->
+            <div
+                class="bg-white p-10 rounded-[2.5rem] card-shadow border border-slate-50 hover:translate-y-[-10px] transition-all flex flex-col items-center text-center group">
+                <div
+                    class="text-7xl mb-8 transform group-hover:scale-110 transition-transform duration-500 drop-shadow-sm">
+                    🤝</div>
+                <h3 class="text-2xl font-black mb-4 text-slate-800 uppercase italic tracking-tight">ИИ-Продавец</h3>
+                <p class="text-slate-500 leading-relaxed font-medium">Отвечает в Директ Инстаграм, ВК и ТГ 24/7, доводит
+                    до оплаты.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 py-20 bg-slate-900 rounded-[3rem] my-20 overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-dzyaba-pink opacity-20 blur-[100px]"></div>
+
+        <div class="flex flex-col md:flex-row items-center gap-12 relative z-10">
+            <div class="md:w-1/2 text-white">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-8 leading-tight">
+                    Больше, чем просто <br>
+                    <span class="text-pink-400">бизнес-софт</span>
+                </h2>
+                <p class="text-xl text-slate-300 mb-8 leading-relaxed">
+                    Дзяба — это ваш личный союзник. Он не только управляет офисом, но и разгружает вашу голову от
+                    бытовых задач.
+                </p>
+
+                <ul class="space-y-6">
+                    <li class="flex items-start gap-4">
+                        <div
+                            class="w-8 h-8 bg-pink-500/20 rounded-full flex items-center justify-center text-pink-400 shrink-0 mt-1">
+                            ✓</div>
+                        <div>
+                            <h4 class="font-bold text-lg text-white">Мгновенный поиск</h4>
+                            <p class="text-slate-400 text-sm">Найди лучший ресторан в Самаре, подбери отель или узнай
+                                курс валют — просто спроси.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div
+                            class="w-8 h-8 bg-pink-500/20 rounded-full flex items-center justify-center text-pink-400 shrink-0 mt-1">
+                            ✓</div>
+                        <div>
+                            <h4 class="font-bold text-lg text-white">Бытовая помощь</h4>
+                            <p class="text-slate-400 text-sm">От рецепта шарлотки до плана тренировок. Дзяба знает всё и
+                                подскажет решение за 2 секунды.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div
+                            class="w-8 h-8 bg-pink-500/20 rounded-full flex items-center justify-center text-pink-400 shrink-0 mt-1">
+                            ✓</div>
+                        <div>
+                            <h4 class="font-bold text-lg text-white">Режим «Забота»</h4>
+                            <p class="text-slate-400 text-sm">Напомнит о дне рождения мамы, записи к стоматологу или о
+                                том, что пора выпить воды.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="md:w-1/2 w-full">
+                <div class="bg-slate-800/50 backdrop-blur-xl border border-white/10 p-6 rounded-[2.5rem] shadow-2xl">
+                    <div class="space-y-4">
+                        <div class="bg-slate-700/50 p-4 rounded-2xl rounded-bl-none max-w-[80%] text-white text-sm">
+                            Оксана, привет! Нашел рецепт того самого пирога с вишней 🍒 Скинуть список продуктов?
+                        </div>
+                        <div
+                            class="bg-pink-500 p-4 rounded-2xl rounded-br-none max-w-[80%] ml-auto text-white text-sm shadow-lg">
+                            Да! И забронируй мне столик на завтра на 19:00 в центре.
+                        </div>
+                        <div class="bg-slate-700/50 p-4 rounded-2xl rounded-bl-none max-w-[80%] text-white text-sm">
+                            Принято. Столик заказан, подтверждение в Календаре. Приятного вечера! ✨
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-white/5 flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-pink-500 rounded-full animate-pulse"></div>
+                            <span class="text-pink-400 font-bold text-xs uppercase tracking-widest">Дзяба
+                                слушает...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="max-w-6xl mx-auto px-6 py-24">
+        <h2
+            class="text-4xl md:text-5xl font-extrabold text-center text-slate-900 mb-16 underline decoration-dzyaba-pink decoration-8 underline-offset-8">
+            Все инструменты в одном окне</h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div
+                class="bg-white p-10 rounded-[2.5rem] card-shadow border border-slate-50 hover:translate-y-[-10px] transition-all">
+                <div class="text-4xl mb-6">🤖</div>
+                <h3 class="text-2xl font-black mb-4 text-slate-800">ИИ-Сотрудники</h3>
+                <p class="text-slate-500 leading-relaxed font-medium">Создайте свой цифровой офис. SMM-щик, Методолог
+                    или Продавец — они работают 24/7 без отпусков и зарплаты.</p>
+            </div>
+            <div
+                class="bg-white p-10 rounded-[2.5rem] card-shadow border border-slate-50 hover:translate-y-[-10px] transition-all">
+                <div class="text-4xl mb-6">📢</div>
+                <h3 class="text-2xl font-black mb-4 text-slate-800">Мультиплатформа</h3>
+                <p class="text-slate-500 leading-relaxed font-medium">Управляйте рассылками и воронками в Telegram, ВК,
+                    Instagram и Макс. Весь ваш маркетинг — под полным контролем.</p>
+            </div>
+            <div
+                class="bg-white p-10 rounded-[2.5rem] card-shadow border border-slate-50 hover:translate-y-[-10px] transition-all">
+                <div class="text-4xl mb-6">⚖️</div>
+                <h3 class="text-2xl font-black mb-4 text-slate-800">ИИ-Совещание</h3>
+                <p class="text-slate-500 leading-relaxed font-medium">Не с кем посоветоваться? Запустите "Консилиум"
+                    ИИ-экспертов прямо в Дзябе и получите идеальную стратегию за 1 минуту.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="concept" class="max-w-4xl mx-auto px-6 py-24">
+        <div class="space-y-8">
+            <!-- 1. УТП -->
+            <div
+                class="bg-white p-8 rounded-[2rem] card-shadow border border-slate-50 flex flex-col md:flex-row gap-6 items-start">
+                <div class="bg-pink-50 w-16 h-16 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">💎
+                </div>
+                <div>
+                    <h3 class="text-2xl font-black text-slate-900 mb-3">Дзяба: Твой автономный бизнес в кармане</h3>
+                    <div
+                        class="bg-slate-50 p-5 rounded-xl border border-slate-100 italic text-slate-500 font-medium leading-relaxed">
+                        «Вам не нужно учить интерфейс. Просто скажите Дзябе голосом: "Сколько мы заработали за неделю?"
+                        или "Сделай рассылку по тем, кто не купил". Он знает платформу изнутри и сделает всё за вас».
+                    </div>
+                    <img src="assets/screen4_stats.png" alt="УТП"
+                        class="w-full mt-6 rounded-[1.5rem] shadow-sm border border-slate-100">
+                </div>
+            </div>
+
+            <!-- Мультиплатформенность -->
+            <div
+                class="bg-white p-8 rounded-[2rem] card-shadow border border-slate-50 flex flex-col md:flex-row gap-6 items-start">
+                <div class="bg-mint-50 w-16 h-16 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">🌐
+                </div>
+                <div>
+                    <h3 class="text-2xl font-black text-slate-900 mb-3">Мультиплатформенность</h3>
+                    <div
+                        class="bg-slate-50 p-5 rounded-xl border border-slate-100 italic text-slate-500 font-medium leading-relaxed max-w-none">
+                        «Начните с Telegram сегодня и масштабируйтесь на ВК, Инстаграм и Макс завтра. Все переписки,
+                        подписчики и продажи — в одном окне».
+                    </div>
+                    <img src="assets/screen5_multi.png" alt="Мультиплатформенность"
+                        class="w-full mt-6 rounded-[1.5rem] shadow-sm border border-slate-100">
+                </div>
+            </div>
+
+            <!-- Конструктор Автоворонок -->
+            <div
+                class="bg-white p-8 rounded-[2rem] card-shadow border border-slate-50 flex flex-col md:flex-row gap-6 items-start">
+                <div class="bg-orange-50 w-16 h-16 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">
+                    ⚙️</div>
+                <div>
+                    <h3 class="text-2xl font-black text-slate-900 mb-3">Конструктор Автоворонок</h3>
+                    <div
+                        class="bg-slate-50 p-5 rounded-xl border border-slate-100 italic text-slate-500 font-medium leading-relaxed max-w-none">
+                        «Собирайте визуальные воронки, которые понимают человеческий язык, а не
+                        только жесткие кнопки».
+                    </div>
+                    <img src="assets/screen1_funnels.png" alt="Конструктор Автоворонок"
+                        class="w-full mt-6 rounded-[1.5rem] shadow-sm border border-slate-100">
+                </div>
+            </div>
+
+            <!-- Финансовый Контроль -->
+            <div
+                class="bg-white p-8 rounded-[2rem] card-shadow border border-slate-50 flex flex-col md:flex-row gap-6 items-start">
+                <div
+                    class="bg-emerald-50 w-16 h-16 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">
+                    💰</div>
+                <div>
+                    <h3 class="text-2xl font-black text-slate-900 mb-3">Финансовый Контроль</h3>
+                    <div
+                        class="bg-slate-50 p-5 rounded-xl border border-slate-100 italic text-slate-500 font-medium leading-relaxed max-w-none">
+                        «Дзяба — это ваш личный финдиректор. Учет всего: от миллионных контрактов до чашки кофе. Система
+                        drag-and-drop позволяет управлять деньгами так же просто, как передвигать иконки на телефоне».
+                    </div>
+                    <img src="assets/screen2_finance.png" alt="Финансовый Контроль"
+                        class="w-full mt-6 rounded-[1.5rem] shadow-sm border border-slate-100">
+                </div>
+            </div>
+
+            <!-- ИИ-Сотрудники и Совещания -->
+            <div
+                class="bg-white p-8 rounded-[2rem] card-shadow border border-slate-50 flex flex-col md:flex-row gap-6 items-start">
+                <div class="bg-blue-50 w-16 h-16 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">🤖
+                </div>
+                <div>
+                    <h3 class="text-2xl font-black text-slate-900 mb-3">ИИ-Сотрудники и Совещания</h3>
+                    <div
+                        class="bg-slate-50 p-5 rounded-xl border border-slate-100 italic text-slate-500 font-medium leading-relaxed max-w-none">
+                        «Больше не нужно нанимать людей и платить зарплаты. Создайте штат ИИ-специалистов, которые сами
+                        пишут контент, делают фотосессии и проводят планерки, выдавая вам готовый результат».
+                    </div>
+                    <img src="assets/screen3_chat.png" alt="ИИ-Сотрудники и Совещания"
+                        class="w-full mt-6 rounded-[1.5rem] shadow-sm border border-slate-100">
+                </div>
+            </div>
+
+            <!-- Календарь событий -->
+            <div
+                class="bg-white p-8 rounded-[2rem] card-shadow border border-slate-50 flex flex-col md:flex-row gap-6 items-start">
+                <div class="bg-purple-50 w-16 h-16 rounded-2xl flex items-center justify-center text-3xl flex-shrink-0">
+                    📅
+                </div>
+                <div>
+                    <h3 class="text-2xl font-black text-slate-900 mb-3">Календарь событий</h3>
+                    <div
+                        class="bg-slate-50 p-5 rounded-xl border border-slate-100 italic text-slate-500 font-medium leading-relaxed max-w-none">
+                        «Вы больше ничего не забудете. Забудьте про ежедневники и стикеры. Дзяба — это ваша идеальная
+                        память. Он записывает задачи голосом и напоминает о них именно тогда, когда нужно.»
+                    </div>
+                    <img src="assets/screen6_calendar.png" alt="Календарь событий"
+                        class="w-full mt-6 rounded-[1.5rem] shadow-sm border border-slate-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <section id="partner" class="bg-slate-900 py-20">
         <div class="max-w-4xl mx-auto px-6 text-center text-white">
-            <h2 class="text-4xl font-extrabold mb-8 text-pink-400 italic">Зарабатывайте 10% с Дзябой</h2>
+            <h2 class="text-4xl font-extrabold mb-8 text-pink-400 italic">Пользуйтесь сами. Зарабатывайте на нас</h2>
             <p class="text-xl text-slate-400 mb-10 leading-relaxed">
-                Станьте частью экосистемы. Рекомендуйте Дзябу друзьям и получайте **10% пожизненно** с каждого их платежа. Прозрачная партнерка и мгновенные выводы.
+                Станьте партнером Дзябы. Получайте 10% с каждого платежа привлеченного клиента — пожизненно. Просто
+                порекомендуйте Дзябу другу, а всё остальное сделает наша партнерская программа.
             </p>
-            <button class="bg-white text-slate-900 px-10 py-4 rounded-full font-black text-lg hover:scale-105 transition">Стать партнером</button>
+            <button
+                class="bg-white text-slate-900 px-10 py-4 rounded-full font-black text-lg hover:scale-105 transition">Стать
+                партнером</button>
         </div>
     </section>
 
-    <footer class="py-12 px-6 border-t border-slate-100">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-slate-400 font-bold">
-            <p>© 2026 DZYABA CRM. Сделано экспертом с 15-летним опытом.</p>
-            <div class="flex space-x-8 mt-6 md:mt-0">
-                <a href="#" class="hover:text-dzyaba-pink">Инструкции</a>
-                <a href="#" class="hover:text-dzyaba-pink">Поддержка</a>
+    <footer class="py-12 px-6 border-t border-slate-100 bg-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-10 text-slate-500 text-sm">
+            <div class="flex flex-col space-y-2">
+                <p class="font-bold text-base text-slate-800">ИП Худяковой Оксаной Владимировной</p>
+                <p>ОГРНИП 323631200117464</p>
+                <p>ИНН 631221271285</p>
+                <div class="pt-4">
+                    <p class="font-medium text-slate-700">По всем вопросам пишите мне:</p>
+                    <p>e-mail: <a href="mailto:info.mila-kh@yandex.ru"
+                            class="text-dzyaba-pink hover:underline">info.mila-kh@yandex.ru</a></p>
+                </div>
+                <p class="pt-6 font-medium text-slate-400">© 2026 Дзяба Все права защищены</p>
+            </div>
+            <div class="flex flex-col space-y-3 md:text-right">
+                <a href="https://milakhschool.ru/ofertadzyaba" target="_blank"
+                    class="hover:text-dzyaba-pink transition">Оферта</a>
+                <a href="https://milakhschool.ru/politikadzyaba" target="_blank"
+                    class="hover:text-dzyaba-pink transition">Политика конфиденциальности</a>
+                <a href="https://milakhschool.ru/soglasiedzyaba" target="_blank"
+                    class="hover:text-dzyaba-pink transition">Согласие на обработку персональных данных</a>
+                <a href="https://milakhschool.ru/reklamadzyaba" target="_blank"
+                    class="hover:text-dzyaba-pink transition">Согласие на получение информационной и рекламной
+                    рассылки</a>
+                <a href="https://milakhschool.ru/obrabotkadzyaba" target="_blank"
+                    class="hover:text-dzyaba-pink transition">Политика обработки персональных данных</a>
             </div>
         </div>
     </footer>
 
 </body>
+
 </html>
